@@ -19,15 +19,15 @@ Se você preferir um driver que cubra todos esses casos, pode considerar o [```d
 
 ### ```makePushStateDriver ()```
 
-Returns a driver that calls ```history.pushState``` on the input paths and outputs paths sent to ```pushState``` as well as received with ```popstate``` events, starting with the current path. If ```pushState``` is not supported, this function returns a driver that simply emits the current path.
+Retorna um driver que chama ``history.pushState`` nos caminhos de entrada e caminhos de saída enviados para ``pushState``, bem como recebidos com eventos ``popstate``, começando com o caminho atual. Se ``pushState`` não for suportado, esta função retorna um driver que simplesmente emite o caminho atual.
 
-## Install
+## Instalar
 
 ```sh
 npm install cycle-pushstate-driver
 ```
 
-## Usage
+## Uso
 
 Basics:
 
@@ -46,7 +46,7 @@ const drivers = {
 Cycle.run(main, drivers)
 ```
 
-Simple use case:
+Caso de uso simples:
 
 ```js
 function main({ DOM, Path }) {
@@ -79,7 +79,7 @@ function main({ DOM, Path }) {
 }
 ```
 
-Routing use case with ```switch-path```:
+Roteamento de caso de uso com ```switch-path```:
 
 ```js
 import switchPath from 'switch-path'
@@ -108,7 +108,7 @@ function main({ DOM, Path }) {
 }
 ```
 
-Routing use case with ```wayfarer```:
+Roteamento de caso de uso com ```wayfarer```:
 ```js
 import wayfarer from 'wayfarer'
 
