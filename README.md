@@ -3,7 +3,7 @@
 
 A [Cycle.js](http://cycle.js.org) [driver](http://cycle.js.org/drivers.html) for the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API).
 
-## Design Choices
+## Opções de Design
 
 Este é um driver Cycle.js mínimo que simplesmente isola chamadas `` `history.pushState``` e eventos` `` popstate```. Não faz nenhuma suposição sobre como você deseja filtrar e transformar fluxos de eventos de clique / toque para criar os caminhos a serem enviados. Nem fará `` ʻe.preventDefault () `` `para você.
 
