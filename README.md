@@ -7,7 +7,7 @@ A [Cycle.js](http://cycle.js.org) [driver](http://cycle.js.org/drivers.html) for
 
 Este é um driver Cycle.js mínimo que simplesmente isola chamadas `` `history.pushState``` e eventos` `` popstate```. Não faz nenhuma suposição sobre como você deseja filtrar e transformar fluxos de eventos de clique / toque para criar os caminhos a serem enviados. Nem fará `` ʻe.preventDefault () `` `para você.
 
-In the absence of ``pushState`` support it lets the links work as normal links. This means that your ```preventDefault``` driver needs to know not to capture these click/touch events.
+Na ausência de suporte ``pushState``, ele permite que os links funcionem como links normais. Isso significa que o driver ``preventDefault`` precisa saber para não capturar esses eventos de clique / toque.
 
 Finally, it does not currently support ```history.replaceState``` or the state argument of ```pushState```
 
