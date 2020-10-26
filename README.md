@@ -9,9 +9,11 @@ Este é um driver Cycle.js mínimo que simplesmente isola chamadas `` `history.p
 
 Na ausência de suporte ``pushState``, ele permite que os links funcionem como links normais. Isso significa que o driver ``preventDefault`` precisa saber para não capturar esses eventos de clique / toque.
 
-Finalmente, ele não oferece suporte atualmente a history.replaceState ou o argumento de estado de ``pushState``
+Finalmente, ele não oferece suporte atualmente a ``history.replaceState`` ou o argumento de estado de ``pushState``
 
 If you prefer a driver that covers all these cases, you may want to consider the [```TylorS/cycle-history```](https://github.com/TylorS/cycle-history) driver which is a batteries-included approach to the same problem.
+
+Se você preferir um driver que cubra todos esses casos, pode considerar o [```driver TylorS / histórico do ciclo```](https://github.com/TylorS/cycle-history) que é uma abordagem incluída com baterias para o mesmo problema.
 
 ## API
 
